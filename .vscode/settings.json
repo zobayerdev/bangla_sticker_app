@@ -19,5 +19,7 @@
     "type": "shell",
     "command": "npm run lint",
     "runOn": "folderOpen"
-  }
+  },
+  "editor.formatOnSave": true,
+  "files.autoSave": "afterDelay"
 }

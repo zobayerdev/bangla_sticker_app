@@ -33,6 +33,26 @@ subprojects {
             }
         }
     }
+
+    if (project.name == "fluttertoast") {
+        afterEvaluate {
+            val android = project.extensions.findByName("android")
+            if (android != null) {
+                try {
+                    val method = android.javaClass.methods.firstOrNull { it.name == "compileSdkVersion" && it.parameterTypes.size == 1 && it.parameterTypes[0] == Integer.TYPE }
+                    method?.invoke(android, 34)
+                } catch (e: Exception) {}
+                try {
+                    val method = android.javaClass.methods.firstOrNull { it.name == "setCompileSdkVersion" && it.parameterTypes.size == 1 && it.parameterTypes[0] == Integer.TYPE }
+                    method?.invoke(android, 34)
+                } catch (e: Exception) {}
+                try {
+                    val method = android.javaClass.methods.firstOrNull { it.name == "setCompileSdk" && it.parameterTypes.size == 1 }
+                    method?.invoke(android, 34)
+                } catch (e: Exception) {}
+            }
+        }
+    }
 }
 
 tasks.register<Delete>("clean") {
