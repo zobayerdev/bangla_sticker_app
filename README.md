@@ -12,9 +12,10 @@
 
 ## 📸 Screenshots
 
-| Admin Dashboard & Pack Manager | Pack Details & Telegram Sync |
+| Pack Manager | Pack Details & Whatsapp, Telegram Sync |
 | :---: | :---: |
-| <img src="screenshots/admin-dashboard.png" alt="Admin Dashboard" width="100%"/> | <img src="screenshots/pack-details.png" alt="Pack Details & Telegram Sync" width="100%"/> |
+| <img src="https://github.com/user-attachments/assets/b2b34d92-bbe5-4e3f-b68e-ccf62da07961" alt="Admin Dashboard" width="30%"/> | <img src="https://github.com/user-attachments/assets/61c0a26d-53b3-4022-8951-7f2dabc28bec" alt="Pack Details & Telegram Sync" width="30%"/> |
+
 
 > **Note:** Create a `screenshots/` folder in your repository root and upload your two screenshots as `admin-dashboard.png` and `pack-details.png` (or update the filenames in the table above).
 
